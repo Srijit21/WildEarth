@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WildEarth - Wildlife & Conservation</title>
+    <!-- Google Fonts & FontAwesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader-content">
+            <i class="fa-solid fa-earth-americas"></i>
+            <h2>Welcome to WildEarth</h2>
+            <div class="loader-bar"><span></span></div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-earth-americas"></i>
+            <span>WildEarth</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#explore">Explore</a>
+            <a href="#wildlife">Wildlife</a>
+            <a href="#conservation">Conservation</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+   <!-- HERO SECTION WITH 4-SECOND ROTATING VIDEOS -->
+    <section class="page-hero">
+        <!-- Multiple background video layers for cross-fading -->
+        <video class="hero-video-bg active" autoplay muted loop playsinline>
+            <source src="assets/videos/hero-vid-1.mp4" type="video/mp4">
+        </video>
+        <video class="hero-video-bg" autoplay muted loop playsinline>
+            <source src="assets/videos/hero-vid-2.mp4" type="video/mp4">
+        </video>
+        <!-- <video class="hero-video-bg" autoplay muted loop playsinline>
+            <source src="assets/videos/hero-vid-3.mp4" type="video/mp4">
+        </video>
+        <video class="hero-video-bg" autoplay muted loop playsinline>
+            <source src="assets/videos/hero-vid-4.mp4" type="video/mp4">
+        </video> -->
+
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-text-center">
+            <span class="hero-tag">Interactive Digital Field Guide</span>
+            <h1>Explore Earth's Biomes & Wildlife</h1>
+            <p>Journey deep into global ecosystems and discover the diverse animal kingdoms that inhabit our planet in one unified learning experience.</p>
+            <div class="hero-buttons" style="margin-top: 30px;">
+                <a href="#explore" class="btn-back">Explore Ecosystems</a>
+                <a href="#wildlife" class="btn-back">Browse Wildlife</a>
+            </div>
+        </div>
+    </section>
+       <!-- EXPLORE SECTION (Forest / Ecosystem Areas) -->
+    <section id="explore" class="section-container">
+        <div class="section-title">
+            <h2>Explore Ecosystems</h2>
+            <p>Journey through diverse geographical landscapes mapped across the globe</p>
+        </div>
+        <div class="card-grid">
+            <!-- Card 1: Rainforest -->
+            <div class="card overlay-card">
+                <img src="assets/images/rainforest.jpg" alt="Rainforest">
+                <div class="card-glass-overlay minimal-overlay">
+                    <div class="card-info">
+                        <h3>Tropical Rainforests</h3>
+                        <a href="ecosystems/rainforest.html" class="btn-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2: Savanna -->
+            <div class="card overlay-card">
+                <img src="assets/images/savanna.jpg" alt="Savanna">
+                <div class="card-glass-overlay minimal-overlay">
+                    <div class="card-info">
+                        <h3>African Savanna</h3>
+                        <a href="ecosystems/savanna.html" class="btn-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3: Tundra -->
+            <div class="card overlay-card">
+                <img src="assets/images/tundra.jpg" alt="Tundra">
+                <div class="card-glass-overlay minimal-overlay">
+                    <div class="card-info">
+                        <h3>Arctic Tundra</h3>
+                        <a href="ecosystems/tundra.html" class="btn-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4: Wetlands -->
+            <div class="card overlay-card">
+                <img src="assets/images/wetlands.jpg" alt="Wetlands">
+                <div class="card-glass-overlay minimal-overlay">
+                    <div class="card-info">
+                        <h3>Mangroves & Wetlands</h3>
+                        <a href="ecosystems/wetlands.html" class="btn-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5: Desert (NEW) -->
+            <div class="card overlay-card">
+                <img src="assets/images/desert.jpg" alt="Desert">
+                <div class="card-glass-overlay minimal-overlay">
+                    <div class="card-info">
+                        <h3>Arid Deserts</h3>
+                        <a href="ecosystems/desert.html" class="btn-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6: Aquatic (NEW) -->
+            <div class="card overlay-card">
+                <img src="assets/images/aquatic.jpg" alt="Aquatic Ecosystem">
+                <div class="card-glass-overlay minimal-overlay">
+                    <div class="card-info">
+                        <h3>Marine & Oceans</h3>
+                        <a href="ecosystems/marine.html" class="btn-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7: Mountains (NEW) -->
+            <div class="card overlay-card">
+                <img src="assets/images/mountains.jpg" alt="Mountains">
+                <div class="card-glass-overlay minimal-overlay">
+                    <div class="card-info">
+                        <h3>Mountain Highlands</h3>
+                        <a href="ecosystems/mountains.html" class="btn-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 8: Boreal Forest (NEW) -->
+            <div class="card overlay-card">
+                <img src="assets/images/boreal.jpg" alt="Boreal Forest">
+                <div class="card-glass-overlay minimal-overlay">
+                    <div class="card-info">
+                        <h3>Boreal Forests</h3>
+                        <a href="ecosystems/boreal.html" class="btn-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- WILDLIFE SECTION (Animal Categories) -->
+    <section id="wildlife" class="section-container bg-alt">
+        <div class="section-title">
+            <h2>Wildlife Categories</h2>
+            <p>Discover the diverse biological classifications that inhabit our world</p>
+        </div>
+        <div class="card-grid">
+            <!-- Card 1: Mammals -->
+            <div class="card overlay-card">
+                <img src="assets/images/mammals.jpg" alt="Mammals">
+                <div class="card-glass-overlay minimal-overlay">
+                    <div class="card-info">
+                        <h3>Mammals</h3>
+                        <a href="wildlife/mammals.html" class="btn-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2: Birds -->
+            <div class="card overlay-card">
+                <img src="assets/images/birds.jpg" alt="Birds">
+                <div class="card-glass-overlay minimal-overlay">
+                    <div class="card-info">
+                        <h3>Birds</h3>
+                        <a href="wildlife/birds.html" class="btn-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3: Reptiles -->
+            <div class="card overlay-card">
+                <img src="assets/images/reptiles.jpg" alt="Reptiles">
+                <div class="card-glass-overlay minimal-overlay">
+                    <div class="card-info">
+                        <h3>Reptiles</h3>
+                        <a href="wildlife/reptiles.html" class="btn-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4: Amphibians -->
+            <div class="card overlay-card">
+                <img src="assets/images/amphibians.jpg" alt="Amphibians">
+                <div class="card-glass-overlay minimal-overlay">
+                    <div class="card-info">
+                        <h3>Amphibians</h3>
+                        <a href="wildlife/amphibians.html" class="btn-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5: Fish -->
+            <div class="card overlay-card">
+                <img src="assets/images/fish.jpg" alt="Fish">
+                <div class="card-glass-overlay minimal-overlay">
+                    <div class="card-info">
+                        <h3>Fish</h3>
+                        <a href="wildlife/fish.html" class="btn-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6: Insects -->
+            <div class="card overlay-card">
+                <img src="assets/images/insects.jpg" alt="Insects">
+                <div class="card-glass-overlay minimal-overlay">
+                    <div class="card-info">
+                        <h3>Insects</h3>
+                        <a href="wildlife/insects.html" class="btn-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7: Arachnids -->
+            <div class="card overlay-card">
+                <img src="assets/images/arachnids.jpg" alt="Arachnids">
+                <div class="card-glass-overlay minimal-overlay">
+                    <div class="card-info">
+                        <h3>Arachnids</h3>
+                        <a href="wildlife/arachnids.html" class="btn-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 8: Mollusks -->
+            <div class="card overlay-card">
+                <img src="assets/images/mollusks.jpg" alt="Mollusks">
+                <div class="card-glass-overlay minimal-overlay">
+                    <div class="card-info">
+                        <h3>Mollusks</h3>
+                        <a href="wildlife/mollusks.html" class="btn-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- UNIFIED CONSERVATION SECTION -->
+    <section class="conservation-section content-wrapper reveal" id="conservation" style="padding: 60px 5%;">
+        
+        <!-- Section Header -->
+        <div class="members-header" style="text-align: center; margin-bottom: 50px;">
+            <span class="sec-tag" style="display: block; font-size: 0.85rem; font-weight: 600; color: var(--accent-green); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px;">Global Stewardship</span>
+            <h2 style="font-size: 2.5rem; font-weight: 700; color: var(--text-main); margin-bottom: 15px;">Preserving Biomes & Biodiversity</h2>
+            <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 700px; margin: 0 auto; line-height: 1.6;">
+                Protecting Earth requires a dual approach: safeguarding vulnerable natural habitats and defending the diverse wildlife species that keep those ecosystems alive.
+            </p>
+        </div>
+
+        <!-- Two-Column Unified Focus Grid -->
+        <div class="members-grid" style="grid-template-columns: repeat(2, 1fr); gap: 30px;">
+            
+            <!-- Card 1: Ecosystem & Habitat Conservation -->
+            <div class="member-card" style="padding: 40px; text-align: left; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px;">
+                <div style="font-size: 2.5rem; color: var(--accent-green); margin-bottom: 20px;">
+                    <i class="fa-solid fa-earth-americas"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; color: var(--text-main); margin-bottom: 12px;">Ecosystem & Habitat Defense</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 20px;">
+                    From halting deforestation in the Amazon to protecting arctic ice sheets and mangrove wetlands, preserving foundational biomes maintains global climate stability, clean water, and atmospheric balance.
+                </p>
+                <ul style="list-style: none; color: var(--text-main); font-size: 0.9rem; display: flex; flex-direction: column; gap: 8px;">
+                    <li><i class="fa-solid fa-check" style="color: var(--accent-green); margin-right: 8px;"></i> Combating global deforestation</li>
+                    <li><i class="fa-solid fa-check" style="color: var(--accent-green); margin-right: 8px;"></i> Protecting freshwater watersheds</li>
+                    <li><i class="fa-solid fa-check" style="color: var(--accent-green); margin-right: 8px;"></i> Preserving carbon-sink peatlands</li>
+                </ul>
+            </div>
+            <br>
+            <!-- Card 2: Wildlife & Species Protection -->
+            <div class="member-card" style="padding: 40px; text-align: left; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px;">
+                <div style="font-size: 2.5rem; color: var(--accent-green); margin-bottom: 20px;">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; color: var(--text-main); margin-bottom: 12px;">Wildlife & Species Protection</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 20px;">
+                    Every animal category—from apex mammalian predators and migrating birds to delicate amphibians and insects—plays a critical role in pollination, seed dispersal, and natural food-web dynamics.
+                </p>
+                <ul style="list-style: none; color: var(--text-main); font-size: 0.9rem; display: flex; flex-direction: column; gap: 8px;">
+                    <li><i class="fa-solid fa-check" style="color: var(--accent-green); margin-right: 8px;"></i> Safeguarding endangered species</li>
+                    <li><i class="fa-solid fa-check" style="color: var(--accent-green); margin-right: 8px;"></i> Preventing illegal wildlife poaching</li>
+                    <li><i class="fa-solid fa-check" style="color: var(--accent-green); margin-right: 8px;"></i> Maintaining pollinator populations</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTACT -->
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3><i class="fa-solid fa-earth-americas"></i> WildEarth</h3>
+                <p>Dedicated to global wildlife protection, ecosystem preservation, and environmental storytelling.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#explore">Explore</a>
+                <a href="#wildlife">Wildlife</a>
+                <a href="#conservation">Conservation</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <p class="email-contact"><i class="fa-solid fa-envelope"></i> contact@wildearth.org</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 WildEarth Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
