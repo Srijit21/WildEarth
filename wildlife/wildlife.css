@@ -24,7 +24,7 @@ body {
     overflow-x: hidden;
 }
 
-/* --- NAVBAR --- */
+/* --- NAVBAR (Transparent over video, glassmorphism on scroll) --- */
 .navbar {
     position: fixed;
     top: 0;
@@ -34,11 +34,18 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 8%;
+    background: transparent; /* Starts fully transparent over the hero video */
+    border-bottom: 1px solid transparent;
+    z-index: 1000;
+    transition: all 0.4s ease;
+}
+
+.navbar.scrolled {
     background: rgba(10, 14, 13, 0.85);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-color);
-    z-index: 1000;
-    transition: all 0.3s ease;
+    padding: 15px 8%;
 }
 
 .logo {
